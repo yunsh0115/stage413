@@ -34,7 +34,7 @@ export default function Hero() {
           href="#contact"
           className="text-sm tracking-wide text-white/85 transition-colors hover:text-white"
         >
-          대관 문의
+          임대 문의
         </a>
       </header>
 
@@ -64,7 +64,7 @@ export default function Hero() {
           href="#contact"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-medium text-forest shadow-lg shadow-black/20 transition hover:bg-wood-light"
         >
-          대관 문의하기
+          임대 문의하기
           <ArrowDown className="size-4" />
         </a>
       </div>

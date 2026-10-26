@@ -32,7 +32,7 @@ export default function Contact() {
           무대는 준비되어 있습니다
         </h2>
         <p className="mt-5 leading-relaxed text-ink/65">
-          일정과 행사 규모를 알려주시면 맞춤 대관 안내를 드립니다.
+          희망 기간과 용도를 알려주시면 맞춤 임대 안내를 드립니다.
         </p>
       </FadeIn>
 
@@ -86,11 +86,11 @@ export default function Contact() {
 
         <FadeIn delay={120} className="flex flex-col justify-center gap-4">
           <a
-            href={`mailto:${site.email}?subject=${encodeURIComponent("[스테이지 413] 대관 문의")}`}
+            href={`mailto:${site.email}?subject=${encodeURIComponent("[스테이지 413] 임대 문의")}`}
             className="flex items-center justify-center gap-2 rounded-full bg-forest py-4 text-paper transition hover:bg-forest-dark"
           >
             <Mail className="size-5" strokeWidth={1.5} />
-            이메일로 대관 문의하기
+            이메일로 임대 문의하기
           </a>
           <a
             href={`tel:${site.phone.replaceAll("-", "")}`}
