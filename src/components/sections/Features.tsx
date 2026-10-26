@@ -25,7 +25,7 @@ const features = [
   {
     icon: PlugZap,
     title: "즉시 활용 가능한 인프라",
-    description: "야외 행사와 팝업, 야간 조명 연출을 위해 세심하게 설계된 외부 전기 배선",
+    description: "야외 행사와 이벤트, 야간 조명 연출을 위해 세심하게 설계된 외부 전기 배선",
     image: facade,
     alt: "통유리 파사드와 마당이 이어지는 건물 전경",
   },

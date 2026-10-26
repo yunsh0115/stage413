@@ -52,7 +52,7 @@ export default function Hero() {
           className="flex animate-[rise_1s_ease-out_both] items-center gap-3 text-[11px] tracking-[0.3em] text-white/75 uppercase lg:text-wood"
         >
           <span className="h-px w-8 bg-current" />
-          Pop-up &amp; Rental Space
+          Seongbok · Yongin
         </p>
 
         <h1
@@ -70,7 +70,7 @@ export default function Hero() {
           style={rise(400)}
           className="mt-6 max-w-sm animate-[rise_1s_ease-out_both] text-base leading-relaxed font-light text-white/85 lg:text-lg lg:text-ink/65"
         >
-          성복동 숲 속, 도심에서 가장 가까운 자연에서 만나는 유연한 팝업 스페이스
+          성복동 숲 속, 도심에서 가장 가까운 자연을 품은 공간
         </p>
 
         {/* 모바일: 칩 */}

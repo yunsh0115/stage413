@@ -15,12 +15,12 @@ const serif = Noto_Serif_KR({
 });
 
 export const metadata: Metadata = {
-  title: "스테이지 413 | 성복동 팝업·임대 스페이스",
+  title: "스테이지 413 | 성복동 숲 속 공간",
   description:
-    "브랜드의 색깔을 마음껏 펼칠 수 있는 도화지 같은 무대. 용인 수지 성복동 자연 속에서 만나는 가장 유연한 팝업 스페이스, 스테이지 413.",
+    "브랜드의 색깔을 마음껏 펼칠 수 있는 도화지 같은 무대. 용인 수지 성복동, 도심에서 가장 가까운 숲 속 공간 스테이지 413.",
   openGraph: {
     title: "스테이지 413 — 당신의 브랜드가 돋보이는 무대",
-    description: "성복동 자연 속에서 만나는 가장 유연한 팝업 스페이스",
+    description: "성복동 숲 속, 도심에서 가장 가까운 자연을 품은 공간",
     locale: "ko_KR",
     type: "website",
   },
