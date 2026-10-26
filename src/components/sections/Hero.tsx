@@ -5,35 +5,40 @@ import { access, site } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-svh flex-col justify-end overflow-hidden text-white">
-      <Image
-        src={hero}
-        alt="파란 하늘과 숲을 배경으로 넓은 마당이 펼쳐진 스테이지 413 외관"
-        fill
-        fetchPriority="high"
-        loading="eager"
-        placeholder="blur"
-        sizes="100vw"
-        className="animate-[hero-zoom_14s_ease-out_forwards] object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/20" />
+    <section className="relative flex min-h-svh flex-col justify-end overflow-hidden bg-forest-dark text-white">
+      {/* 모바일: 전체 배경 / 데스크톱: 오른쪽 절반 */}
+      <div className="absolute inset-0 overflow-hidden md:left-1/2">
+        <Image
+          src={hero}
+          alt="통유리 파사드와 검은 계단 타워가 어우러진 스테이지 413 외관"
+          fill
+          fetchPriority="high"
+          loading="eager"
+          placeholder="blur"
+          sizes="(min-width: 768px) 50vw, 100vw"
+          className="animate-[hero-zoom_14s_ease-out_forwards] object-cover object-[center_70%]"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/20 md:hidden" />
 
       <header className="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-6 py-6 md:px-12">
         <span className="font-serif text-lg tracking-[0.2em]">STAGE 413</span>
         <a
           href="#contact"
-          className="text-sm tracking-wide text-white/85 transition-colors hover:text-white"
+          className="text-sm tracking-wide text-white/85 drop-shadow transition-colors hover:text-white"
         >
           대관 문의
         </a>
       </header>
 
-      <div className="relative z-10 mx-auto w-full max-w-5xl px-6 pb-20 md:px-12 md:pb-28">
+      <div className="relative z-10 w-full px-6 pb-20 md:w-1/2 md:px-12 md:pb-28 lg:px-16">
         <p className="mb-5 text-xs tracking-[0.3em] text-white/75 uppercase">
           Pop-up &amp; Rental Space · Seongbok
         </p>
-        <h1 className="font-serif text-[2rem] leading-snug font-semibold md:text-6xl md:leading-tight">
-          당신의 브랜드가 돋보이는 무대,
+        <h1 className="font-serif text-[2rem] leading-snug font-semibold md:text-5xl md:leading-tight lg:text-6xl">
+          당신의 브랜드가
+          <br />
+          돋보이는 무대,
           <br />
           스테이지 413
         </h1>
