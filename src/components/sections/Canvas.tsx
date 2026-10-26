@@ -4,7 +4,7 @@ import hallLight from "@/assets/space/hall-light.jpg";
 
 export default function Canvas() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-28 md:px-12 md:py-40">
+    <section id="space" className="mx-auto max-w-5xl px-6 py-28 md:px-12 md:py-40">
       <FadeIn>
         <p className="text-xs tracking-[0.3em] text-wood uppercase">Canvas</p>
         <h2 className="mt-5 font-serif text-2xl leading-relaxed font-semibold md:text-4xl md:leading-snug">
