@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-paper: #faf8f4;
+  --color-sand: #f1ece3;
+  --color-wood: #a9825a;
+  --color-wood-light: #d9c3a5;
+  --color-forest: #1f3d2f;
+  --color-forest-dark: #16291f;
+  --color-ink: #1d211e;
+
+  --font-sans: var(--font-sans-kr), system-ui, sans-serif;
+  --font-serif: var(--font-serif-kr), serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  word-break: keep-all;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[hero-zoom_14s_ease-out_forwards\] {
+    animation: none;
+  }
+}
