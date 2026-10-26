@@ -6,6 +6,7 @@ const targets = [
   "감성적인 원목 가구 및 라이프스타일 브랜드 쇼룸",
   "자연광이 필요한 룩북 촬영 및 광고 스튜디오",
   "특색 있는 F&B 팝업 스토어",
+  "숲을 바라보며 식사하는 레스토랑·다이닝 공간",
 ];
 
 export default function Recommended() {
