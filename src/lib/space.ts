@@ -3,7 +3,6 @@ export const building = {
   width: 12.2, // m (동서)
   depth: 17.7, // m (남북)
   floors: "지상 2층 + 옥상",
-  use: "근린생활시설 (소매점)",
 };
 
 export const highlights = [

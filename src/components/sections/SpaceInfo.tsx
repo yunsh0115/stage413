@@ -136,10 +136,6 @@ export default function SpaceInfo() {
             <dt className="w-16 shrink-0 text-ink/40">규모</dt>
             <dd>{building.floors}</dd>
           </div>
-          <div className="flex gap-3">
-            <dt className="w-16 shrink-0 text-ink/40">용도</dt>
-            <dd>{building.use}</dd>
-          </div>
         </dl>
         <p className="mt-6 text-xs text-ink/40">
           * 면적은 건축 도면 치수를 기준으로 산출한 근사치로, 실제 전용면적과 차이가 있을 수 있습니다.
