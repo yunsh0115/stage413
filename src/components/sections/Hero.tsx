@@ -5,7 +5,17 @@ import { access, site } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-svh flex-col justify-end overflow-hidden text-white">
+    <section className="relative flex min-h-svh flex-col justify-end overflow-hidden bg-forest-dark text-white">
+      {/* 세로 사진이라 가로로 넓은 화면에서는 잘리지 않게 전체를 보여주고, 양옆은 흐린 배경으로 채움 */}
+      <Image
+        src={main}
+        alt=""
+        aria-hidden
+        fill
+        quality={40}
+        sizes="50vw"
+        className="hidden scale-110 object-cover opacity-70 blur-2xl [@media(min-aspect-ratio:1/1)]:block"
+      />
       <Image
         src={main}
         alt="푸른 하늘 아래 통유리 파사드와 검은 계단 타워가 어우러진 스테이지 413 외관"
@@ -14,7 +24,7 @@ export default function Hero() {
         loading="eager"
         placeholder="blur"
         sizes="100vw"
-        className="animate-[hero-zoom_14s_ease-out_forwards] object-cover object-[center_30%]"
+        className="animate-[hero-zoom_14s_ease-out_forwards] object-cover object-[center_30%] [@media(min-aspect-ratio:1/1)]:object-contain"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/20" />
 
